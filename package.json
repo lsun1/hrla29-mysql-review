@@ -1,7 +1,7 @@
 {
   "name": "mysql-review",
   "version": "1.0.0",
-  "description": "#Exercise-1 <br /> Install any dependencies you need and write a start script for your server. Build out your express server and route your requests (GET, POST, DELETE) to your controller. Controller functionality can be merely a console.log at this point. Make sure that your requests are hitting your endpoints.",
+  "description": "#Exercise-1 <br /> Install any dependencies you need and write a start script for your server.  Make sure that your requests are hitting your endpoints (test through Postman or Insomnia).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-loader": "^8.0.5",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "webpack": "^4.29.0",
