@@ -15,6 +15,7 @@ class List extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.deleteTodo = this.deleteTodo.bind(this);
   }
+
   componentDidMount() {
     this.fetchTodos();
   }
@@ -22,7 +23,9 @@ class List extends Component {
   fetchTodos() {
     axios
       .get('/api/todoList', { params: { listName: this.state.listName } })
-      .then(({ data }) => this.setState({ todos: data }))
+      .then(({ data }) => { 
+        this.setState({ todos: data })
+      })
       .catch(err => console.log(err));
   }
 
@@ -45,7 +48,7 @@ class List extends Component {
     axios
       .delete('/api/todoList', {
         params: { index, listName: this.state.listName }  
-    })
+      })
     .then(this.fetchTodos())
     .catch(err => console.log(err));
   }
