@@ -8,7 +8,7 @@ Create an index.js file in your database directory. Inside of that file, use seq
 Export your connection.
 
 #Exercise-3 <br />
-Create a models.js file inside your database directory. Inside of that file, construct your schemas and export those schemas.
+Create a models.js file inside your database directory. Inside of that file, construct your schemas to have fields for todo name and list name and export those schemas.
 
 #Exercise-4 <br />
 Inside of your controller.js, import your database models and build out your controller functions.
