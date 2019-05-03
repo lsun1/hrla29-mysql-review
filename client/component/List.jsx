@@ -40,7 +40,7 @@ class List extends Component {
     const { todo, todos, listName } = this.state;
     axios
       .post('/api/todoList', { todo, listName: this.state.listName })
-      .then(this.fetchTodos())
+      .then(() => this.fetchTodos())
       .catch(err => console.log(err));
   }
 
@@ -49,7 +49,7 @@ class List extends Component {
       .delete('/api/todoList', {
         params: { index, listName: this.state.listName }  
       })
-    .then(this.fetchTodos())
+    .then(() => this.fetchTodos())
     .catch(err => console.log(err));
   }
 
