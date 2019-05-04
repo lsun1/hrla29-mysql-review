@@ -3,6 +3,7 @@ const path = require('path');
 const parser = require('body-parser');
 const PORT = 3000;
 const routes = require('./routes.js');
+const db = require('../database/index.js');  //reference db index.js to connect database
 
 const app = express();
 
